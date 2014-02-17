@@ -1,7 +1,9 @@
 yo-mean-pass
 ============
 
-Yo-MEAN-Pass is an attempt to bring the MEAN stack into Yeoman. This is not based on the yo generator `angular-fullstack`, but using the yo generator `angular` with [mean](https://github.com/linnovate/mean) 
+Yo-MEAN-Pass is an attempt to bring the [MEAN stack](http://blog.mongodb.org/post/49262866911/the-mean-stack-mongodb-expressjs-angularjs-and) into [Yeoman](http://yeoman.io/) along with security layer, [PassportJS](http://passportjs.org/). This project provides a basic template for all these tehcnologies built into one project.
+
+This is not based on the yo generator `angular-fullstack`, but using the yo generator `angular` with [mean](https://github.com/linnovate/mean). I went about creating this template since I liked the directory structure in [mean](https://github.com/linnovate/mean), and wanted to use it along with the yo generator.
 
 ## [Yeoman](http://yeoman.io/) ##
 
@@ -14,7 +16,7 @@ MEAN stack is the acronym which stands for: (M)ongoDB – a noSQL document datas
 ## Pre-requisites ##
 
 1. Install NodeJS
-2. Install MongoDB
+2. Install MongoDB and start it on the default port 27017
 3. Install Yeoman, with GruntJS and Bower
 
 ## Getting Started ##
@@ -32,4 +34,14 @@ MEAN stack is the acronym which stands for: (M)ongoDB – a noSQL document datas
 		grunt server
 
 3. Then open a browser and go to: `http://localhost:3000/`
+4. For create a new AngularJS controller go ahead ad run the command
 
+ 		 yo angular:controller info
+This will create an `info.js` file under `app/controllers directory` with the controller named as `InfoCtrl`.
+
+5. See the [Github Project](https://github.com/yeoman/generator-angular) for more options.
+
+
+### Note ###
+
+Have a look at the yo `generator-angular-fullstack` [here](https://github.com/DaftMonk/generator-angular-fullstack) . This could be an cleaner alternate solution for this project. 
