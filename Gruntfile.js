@@ -84,39 +84,6 @@ module.exports = function (grunt) {
             }
         }
     },
-    // The actual grunt server settings
-//    connect: {
-//      options: {
-//        port: 9000,
-//        // Change this to '0.0.0.0' to access the server from outside.
-//        hostname: 'localhost',
-//        livereload: 35729
-//      },
-//      livereload: {
-//        options: {
-//          open: true,
-//          base: [
-//            '.tmp',
-//            '<%= yeoman.app %>'
-//          ]
-//        }
-//      },
-//      test: {
-//        options: {
-//          port: 9001,
-//          base: [
-//            '.tmp',
-//            'test',
-//            '<%= yeoman.app %>'
-//          ]
-//        }
-//      },
-//      dist: {
-//        options: {
-//          base: '<%= yeoman.dist %>'
-//        }
-//      }
-//    },
 
     // Make sure code styles are up to par and there are no obvious mistakes
     jshint: {
@@ -169,14 +136,10 @@ module.exports = function (grunt) {
     // Automatically inject Bower components into the app
     'bower-install': {
       app: {
-        html: '<%= yeoman.app %>/index.html',
+        html: '<%= yeoman.app %>/views/index.html',
         ignorePath: '<%= yeoman.app %>/'
       }
     },
-
-
-
-
 
     // Renames files for browser caching purposes
     rev: {
